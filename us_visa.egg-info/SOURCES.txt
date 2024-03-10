@@ -1,3 +1,5 @@
+LICENSE
+README.md
 setup.py
 us_visa/__init__.py
 us_visa.egg-info/PKG-INFO
@@ -12,7 +14,10 @@ us_visa/components/model_evaluation.py
 us_visa/components/model_pusher.py
 us_visa/components/model_trainer.py
 us_visa/configuration/__init__.py
+us_visa/configuration/mongo_db_connection.py
 us_visa/constants/__init__.py
+us_visa/data_access/__init__.py
+us_visa/data_access/us_visa_data.py
 us_visa/entity/__init__.py
 us_visa/entity/artifact_entity.py
 us_visa/entity/config_entity.py

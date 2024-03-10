@@ -56,7 +56,7 @@ class TrainPipeline:
         
     
 
-    def start_data_validation(self, data_ingestion_artifact: DataIngestionArtifact) -> DataValidationArtifact:
+    '''def start_data_validation(self, data_ingestion_artifact: DataIngestionArtifact) -> DataValidationArtifact:
         """
         This method of TrainPipeline class is responsible for starting data validation component
         """
@@ -143,7 +143,7 @@ class TrainPipeline:
             model_pusher_artifact = model_pusher.initiate_model_pusher()
             return model_pusher_artifact
         except Exception as e:
-            raise USvisaException(e, sys)
+            raise USvisaException(e, sys)'''
 
         
 
