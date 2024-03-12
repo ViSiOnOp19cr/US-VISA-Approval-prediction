@@ -3,11 +3,11 @@ from us_visa.exception import USvisaException
 from us_visa.logger import logging
 
 from us_visa.components.data_ingestion import DataIngestion
-'''from us_visa.components.data_validation import DataValidation
+from us_visa.components.data_validation import DataValidation
 from us_visa.components.data_transformation import DataTransformation
 from us_visa.components.model_trainer import ModelTrainer
 from us_visa.components.model_evaluation import ModelEvaluation
-from us_visa.components.model_pusher import ModelPusher'''
+from us_visa.components.model_pusher import ModelPusher
 
 from us_visa.entity.config_entity import (DataIngestionConfig,
                                           DataValidationConfig,
@@ -56,7 +56,7 @@ class TrainPipeline:
         
     
 
-    '''def start_data_validation(self, data_ingestion_artifact: DataIngestionArtifact) -> DataValidationArtifact:
+    def start_data_validation(self, data_ingestion_artifact: DataIngestionArtifact) -> DataValidationArtifact:
         """
         This method of TrainPipeline class is responsible for starting data validation component
         """
@@ -143,7 +143,7 @@ class TrainPipeline:
             model_pusher_artifact = model_pusher.initiate_model_pusher()
             return model_pusher_artifact
         except Exception as e:
-            raise USvisaException(e, sys)'''
+            raise USvisaException(e, sys)
 
         
 
